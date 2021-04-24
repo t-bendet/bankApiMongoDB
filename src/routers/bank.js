@@ -7,7 +7,9 @@ const { deposit, updateCredit, withdraw, transfer } = require("./utills");
 
 const router = new express.Router();
 //TODO make name unique
-
+router.get("/", async (req, res) => {
+  res.send("helllllllllllllllllo");
+});
 //Create a new client+account
 router.post("/create-client", async (req, res) => {
   const { clientDetails, accountDetails } = req.body;
