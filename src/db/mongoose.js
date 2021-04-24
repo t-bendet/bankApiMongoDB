@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const { MONGOODB_KEY } = require("../config/keys");
+const Account = require("../models/account");
 
 const uri = `mongodb+srv://${MONGOODB_KEY}@cluster0.ogtpo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 mongoose
@@ -11,3 +12,7 @@ mongoose
     console.log("MongoDB Connected…");
   })
   .catch((err) => console.log(err));
+
+const test = Account.find({}).then(() => {
+  console.log(test);
+});
