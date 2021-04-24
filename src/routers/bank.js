@@ -3,7 +3,7 @@ const Client = require("../models/client");
 const Account = require("../models/account");
 const Transaction = require("../models/transaction");
 const { deposit, updateCredit, withdraw, transfer } = require("./utills");
-// new Date().toLocaleString()
+// new Date().toLocaleString()/
 
 const router = new express.Router();
 router.get("/", async (req, res) => {
