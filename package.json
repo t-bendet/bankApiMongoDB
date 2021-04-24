@@ -1,0 +1,22 @@
+{
+  "name": "bankapimongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.5",
+    "mongoose-unique-validator": "^2.0.3",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7",
+    "validator": "^13.6.0"
+  }
+}
