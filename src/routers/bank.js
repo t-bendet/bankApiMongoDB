@@ -4,12 +4,11 @@ const Account = require("../models/account");
 const Transaction = require("../models/transaction");
 const { deposit, updateCredit, withdraw, transfer } = require("./utills");
 // new Date().toLocaleString()
-const { MONGOODB_KEY } = require("../config/keys");
 
 const router = new express.Router();
 //TODO make name unique
 router.get("/", async (req, res) => {
-  res.send(MONGOODB_KEY);
+  res.send(__dirname);
 });
 //Create a new client+account
 router.post("/create-client", async (req, res) => {
