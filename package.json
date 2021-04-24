@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install",
     "start": "node src/index.js"
   },
   "author": "",
