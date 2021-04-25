@@ -6,9 +6,9 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 8080;
 
+app.use(cors());
 app.use(express.json());
 app.use(bankRouter);
-app.use(cors());
 
 app.listen(PORT, () => {
   console.log(`Server is up on port ${PORT}`);
